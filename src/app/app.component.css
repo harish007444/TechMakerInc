@@ -1,0 +1,11 @@
+.main {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    
+    section {
+      min-height: 100vh;
+      padding: 80px 20px;
+      scroll-margin-top: 80px;
+    }
+  }
+  
