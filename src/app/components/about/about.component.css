@@ -5,52 +5,30 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.about-us {
+.about-us-container {
   display: flex;
-  align-items: center;
-  height: 100vh;
+  justify-content: space-around; 
+  align-items: flex-start;
+  gap: 20px; 
+  flex-wrap: wrap; 
+  padding: 40px 20px; 
+}
+.pic, .pic1, .pic2 {
+  height: 300px; 
   width: 100%;
-  padding: 90px 0;
-  background: #fff;
-}
-
-.pic {
-  height: 450px;
-  width: 500px;
   border-radius: 12px;
+  margin-bottom: 20px; 
 }
-.pic1 {
-    height: 450px;
-    width: 500px;
-    border-radius: 12px;
-    order: 2;
-  }
-  .pic2 {
-    height: 450px;
-    width: 500px;
-    border-radius: 12px;
-    order: 1;
-  }
-
-.about {
-    width: 1130px;
-    max-width: 85%;
-    margin: 0 auto;
+  .about {
+    width: 30%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: column; 
+    align-items: center; 
   }
-.text {
-  width: 540px;
-}
-.text1 {
-    width: 540px;
-    order: 1;
+  .text, .text1, .text2 {
+    text-align: justify;
   }
-  .text2 {
-    width: 540px;
-    order: 2;
-  }
+  
 .text h3,.text1 h3,.text2 h3 {
   color: #333;
   font-size: 60px;
