@@ -1,97 +1,61 @@
-<!doctype html>
-<html>
- <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contact Us - Responsive Page Design</title>
-    <link rel="shortcut icon" type="image/jpg" href="/images/news2.png"/>
-    <link rel="shortcut icon" type="image/jpg" href="/images/news2.png"/>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
-    </style>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "LEToY2MCOiI51kkDR",
-      });
-   })();
-</script>
-<script src="contact.js"></script>
-    <link rel="stylesheet" href="contact.component.css">
-    </head>
-    <body>
-        <section>
-            <div class="container">
-                <div class="contactInfo"> 
-                    <div>
-                        <h2>Contact Info</h2>
-                        <ul class="info">
-                            <li>
-                                <span><img src="../../../assets/images/location.png"></span>
-                                <span>184 Ippokratous Street<br>
-                                    Athens, Gr<br>
-                                    11472</span>
-                            </li>
-                            <li>
-                                <span><img src="../../../assets/images/mail.png"></span>
-                                <!-- <span>nassosanagn@gmail.com</span> -->
-                                <span><a href = "mailto: nassosanagn@gmail.com">nassosanagngmail.com</a></span>
-                            </li>
-                            <li>
-                                <span><img src="../../../assets/images/call.png"></span>
-                                <span>702-279-3488</span>
-                            </li>
-
-                        </ul>
+<section>
+    <div class="container">
+        <div class="contactInfo"> 
+            <div>
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><img src="../../../assets/images/location.png"></span>
+                        <span>Bengalore, Karnataka<br>
+                            560109<br>
+                            </span>
+                    </li>
+                    <li>
+                        <span><img src="../../../assets/images/mail.png"></span>
+                        <span><a href="mailto: techmakersinc@gmail.com">TechMakersInc</a></span>
+                    </li>
+                    <li>
+                        <span><img src="../../../assets/images/call.png"></span>
+                        <span></span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/nassosanagn/"><img src="../../../assets/images/1.png"></a></li>
+                <li><a href="https://www.instagram.com/nassosanagn_/?hl=el"><img src="../../../assets/images/3.png"></a></li>
+                <li><a href="https://twitter.com/nassosanagn"><img src="../../../assets/images/2.png"></a></li>
+                <li><a href="https://www.linkedin.com/in/nassos-anagnostopoulos-2b9631196/"><img src="../../../assets/images/5.png"></a></li>
+            </ul>
+        </div>
+        <div class="contactForm">
+            <h2>Send a Message</h2>
+            <form (ngSubmit)="onSubmit()">
+                <div class="formBox">
+                    <div class="inputBox w50">
+                        <input type="text" id="firstName" name="firstName" [(ngModel)]="firstName" required>
+                        <span>First Name</span>
                     </div>
-                    <ul class="sci">
-                        <li><a href="https://www.facebook.com/nassosanagn/"><img src="../../../assets/images/1.png"></a></li>
-                        <li><a href="https://www.instagram.com/nassosanagn_/?hl=el"><img src="../../../assets/images/3.png"></a></li>
-                        <li><a href="https://twitter.com/nassosanagn"><img src="../../../assets/images/2.png"></a></li>
-                        <li><a href="https://www.linkedin.com/in/nassos-anagnostopoulos-2b9631196/"><img src="../../../assets/images/5.png"></a></li>
-                        
-                    </ul>
-                </div>
-                    <div class="contactForm">
-                        <h2>Send a Message</h2>
-                        <div class="formBox">
-                        <div class="inputBox w50">
-                            <input type="text" id="firstName" name="firstName" required>
-                            <span>First Name</span>
-                        </div>
-                        <div class="inputBox w50">
-                            <input type="text" id="lastName" name="lastName" required>
-                            <span>Last Name</span>
-                        </div>
-                        <div class="inputBox w50">
-                            <input type="email" id="email" name="email" required>
-                            <span>Email Address</span>
-                        </div>
-                        <div class="inputBox w50">
-                            <input type="text" id="mobileNumber" name="mobileNumber" required>
-                            <span>Mobile Number</span>
-                        </div>
-                        <div class="inputBox w100">
-                            <textarea id="message" name="message" required></textarea>
-                            <span>Write your message here...</span>
-                        </div>
-                        <div class="inputBox w100">
-                            <input type="submit" onclick="sendMail()" value="Send">
-                        </div>
+                    <div class="inputBox w50">
+                        <input type="text" id="lastName" name="lastName" [(ngModel)]="lastName" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="email" id="email" name="email" [(ngModel)]="email" required>
+                        <span>Email Address</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" id="mobileNumber" name="mobileNumber" [(ngModel)]="mobileNumber" required>
+                        <span>Mobile Number</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea id="message" name="message" [(ngModel)]="message" required></textarea>
+                        <span>Write your message here...</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="submit" value="Send">
                     </div>
                 </div>
-            </div>     
-        </section>
-        
-    </body>
-</html>
+            </form>
+        </div> 
+    </div>    
+</section>
