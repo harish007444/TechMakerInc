@@ -11,6 +11,7 @@ import { BlogComponent } from './components/blog/blog.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
+import { ServiceComponent } from './components/service/service.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { FooterComponent } from './components/footer/footer.component';
     TeamComponent,
     BlogComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ServiceComponent,
   ],
   imports: [
     BrowserModule,
