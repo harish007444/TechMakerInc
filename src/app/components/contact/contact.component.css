@@ -1,5 +1,4 @@
-/* @import url('http://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap'); */
-
+ @import url('http://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 *
 {
     margin: 0;
@@ -226,6 +225,7 @@ section
     background: #0d9480;
 }
 
+
 /* make the form responsive */
 @media (max-width: 1200px)
 {
@@ -327,3 +327,4 @@ section
         width: 100%;
     }
 }
+
