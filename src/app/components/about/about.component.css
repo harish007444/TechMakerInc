@@ -12,6 +12,7 @@
   gap: 20px; 
   flex-wrap: wrap; 
   padding: 40px 20px; 
+  background: #000;
 }
 .pic, .pic1, .pic2 {
   height: 300px; 
@@ -30,41 +31,42 @@
   }
   
 .text h3,.text1 h3,.text2 h3 {
-  color: #333;
+  color: #F5F5DC;
   font-size: 60px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 .text h5, .text1 h5, .text2 h5 {
-  color: #333;
+  color: #F5F5DC;
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 span {
-  color: #4070f4;
+  color: #c29b1e;
 }
 .text p, .text1 p,.text2 p {
-  color: #333;
+  color: #F5F5DC;
   font-size: 18px;
   line-height: 25px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 .data {
   margin-top: 30px;
 }
 .contact {
   font-size: 18px;
-  background: #4070f4;
+  background: #c29b1e;
   color: #fff;
   text-decoration: none;
   border: none;
   padding: 12px 25px;
   border-radius: 6px;
   transition: 0.5s;
+  font-weight: bold;
 }
 .contact:hover {
-  background: #000;
+  background: #886b09;
 }
 
 .arrow {

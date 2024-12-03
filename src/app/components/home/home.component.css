@@ -2,7 +2,7 @@
 .home-container {
   height: 100vh;
   position: relative;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  background: linear-gradient(135deg, #000000 0%, #373902 100%);
   overflow: hidden;
 
   &::before {
@@ -37,7 +37,7 @@
       left: -10%;
       width: 50%;
       height: 50%;
-      background: radial-gradient(circle, #4f46e5 0%, transparent 70%);
+      background: radial-gradient(circle, #c29b1e 0%, transparent 70%);
       animation: float 15s ease-in-out infinite, glow 3s ease-in-out infinite alternate;
     }
     
@@ -46,7 +46,7 @@
       right: -10%;
       width: 40%;
       height: 40%;
-      background: radial-gradient(circle, #06b6d4 0%, transparent 70%);
+      background: radial-gradient(circle, #c29b1e 0%, transparent 70%);
       animation: float 20s ease-in-out infinite reverse, glow 4s ease-in-out infinite alternate;
     }
     
@@ -55,7 +55,7 @@
       left: 30%;
       width: 45%;
       height: 45%;
-      background: radial-gradient(circle, #8b5cf6 0%, transparent 70%);
+      background: radial-gradient(circle, #c29b1e 0%, transparent 70%);
       animation: float 18s ease-in-out infinite, glow 5s ease-in-out infinite alternate;
     }
   }
@@ -102,7 +102,7 @@
   
   .shape {
     position: absolute;
-    background: rgba(255, 255, 255, 0.1);
+    background: #e0b837;
     backdrop-filter: blur(5px);
     border-radius: 10px;
     animation: floatShape 10s ease-in-out infinite;
@@ -177,7 +177,7 @@
     font-size: 4.5rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
-    background: linear-gradient(to right, #fff, #94a3b8);
+    background: linear-gradient(to right, #fff, #F5F5DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 0 20px rgba(255,255,255,0.1));
@@ -190,8 +190,8 @@
   p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    color: #94a3b8;
-    text-shadow: 0 0 10px rgba(148,163,184,0.3);
+    color: #F5F5DC;
+    /* text-shadow: 0 0 10px rgba(148,163,184,0.3); */
     
     @media (max-width: 768px) {
       font-size: 1.2rem;
@@ -277,7 +277,7 @@
     }
     
     &.primary-btn {
-      background: linear-gradient(135deg, #4f46e5 0%, #8b5cf6 100%);
+      background: linear-gradient(135deg, #c29b1e 0%, #8b5cf6 100%);
       color: white;
       border: none;
       box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
