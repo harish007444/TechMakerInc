@@ -1,4 +1,3 @@
-// home.component.ts
 import { Component, OnInit, HostListener } from '@angular/core';
 import { trigger, transition, style, animate, query, stagger, state } from '@angular/animations';
 
