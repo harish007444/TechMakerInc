@@ -23,13 +23,20 @@
     width: 100%;
     height: 100%;
     padding: 2em 1.5em;
-    background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
+    background: linear-gradient(#ffffff 50%, #4a90e2 50%);
     background-size: 100% 200%;
     background-position: 0 2.5%;
     border-radius: 5px;
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
     cursor: pointer;
     transition: 0.5s;
+  }
+  h2{
+    font-size: 60px;
+    font-weight: 600;
+    span{
+      color: #4a90e2;
+    }
   }
   h3 {
     font-size: 20px;

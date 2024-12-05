@@ -50,7 +50,7 @@
   }
   
   #footer .social-links a:hover {
-    color: #f4b41a;
+    color: #4a90e2;
   }
   
   /* Newsletter Form */
@@ -71,7 +71,7 @@
   
   .newsletter-form button {
     padding: 8px 15px;
-    background-color: #f4b41a;
+    background-color: #4a90e2;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -79,7 +79,7 @@
   }
   
   .newsletter-form button:hover {
-    background-color: #e69900;
+    background-color: #235084;
   }
   
   /* Footer Bottom */

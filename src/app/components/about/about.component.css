@@ -12,7 +12,7 @@
   gap: 20px; 
   flex-wrap: wrap; 
   padding: 40px 20px; 
-  background: #000;
+  background: white
 }
 .pic, .pic1, .pic2 {
   height: 300px; 
@@ -31,22 +31,22 @@
   }
   
 .text h3,.text1 h3,.text2 h3 {
-  color: #F5F5DC;
-  font-size: 60px;
+  color: #000;
+  font-size: 40px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 .text h5, .text1 h5, .text2 h5 {
-  color: #F5F5DC;
+  color: #000;
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 span {
-  color: #c29b1e;
+  color: #4a90e2;
 }
 .text p, .text1 p,.text2 p {
-  color: #F5F5DC;
+  color: #000;
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.5px;
@@ -56,7 +56,7 @@ span {
 }
 .contact {
   font-size: 18px;
-  background: #c29b1e;
+  background: #4a90e2;
   color: #fff;
   text-decoration: none;
   border: none;
@@ -66,7 +66,7 @@ span {
   font-weight: bold;
 }
 .contact:hover {
-  background: #886b09;
+  background: #5f6b7a;
 }
 
 .arrow {
